@@ -3,7 +3,7 @@
     <header>
       <router-link to="/" class="butt butt_ticket">Home</router-link>
     </header>
-    <filter v-bind:data="movie"></filter>
+    <filterComponent v-bind:data="movie"></filterComponent>
     <div class="movies">
         <movieComponent v-for="movie in movies" v-bind:key="movie.id" v-bind:data="movie"></movieComponent>
     </div>
